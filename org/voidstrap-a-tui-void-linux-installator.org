@@ -1,11 +1,11 @@
 #+title: Voidstrap a tui void linux installator
-#+author: Javier Pacheco
-#+date: [2024-01-01 Mon 14:34]
-#+hugo_base_dir: ~/jpacheco.xyz
+#+AUTHOR: Javier Pacheco
+#+hugo_base_dir: ~/webdev/github/coder
+#+hugo_section: posts
 #+startup: content
 #+hugo_auto_set_lastmod: t
-#+hugo_categories: emacs hugo
-#+data: 2024-07-01
+#+hugo_categories: project venom linux
+#+data: [2023-07-01]
 #+seq_todo: todo doing published
 
 #+BEGIN_PREVIEW

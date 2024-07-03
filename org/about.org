@@ -1,5 +1,6 @@
 #+TITLE: About Me
-#+hugo_base_dir: ~/webdev/javier
+#+hugo_base_dir: ~/webdev/github/coder
+#+hugo_section: about
 #+startup: content
 #+hugo_auto_set_lastmod: t
 #+hugo_categories: emacs hugo
@@ -8,7 +9,7 @@
 
 
 #+ATTR_HTML: :width 200px :style float:left;margin:0px 10px 10px 0px;
-[[images/jp.jpg]]
+# [[images/jp.jpg]]
 
 Greetings! I'm Javier Pacheco, a dedicated Industrial Maintenance Engineer with a rich academic foundation from the prestigious *UTM* in *H. Matamoros Tamaulipas,Mexico*. Over the span of 12 fruitful years, I've been an integral part of the automotive industry, contributing my expertise in a multitude of critical domains.
 

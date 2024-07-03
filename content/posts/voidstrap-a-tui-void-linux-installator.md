@@ -1,9 +1,8 @@
 +++
 title = "Voidstrap a tui void linux installator"
 author = ["Javier Pacheco"]
-date = 2024-01-01T14:34:00-06:00
-lastmod = 2024-07-01T09:29:06-05:00
-categories = ["emacs", "hugo"]
+lastmod = 2024-07-03T05:39:15-05:00
+categories = ["project", "venom", "linux"]
 draft = false
 +++
 

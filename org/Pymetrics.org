@@ -1,7 +1,8 @@
 #+TITLE: Pymetrics
 #+AUTHOR: Javier Pacheco
 #+DESCRIPTION: A pythin GUI app to mage a maintenance log
-#+hugo_base_dir: ~/jpacheco.xyz
+#+hugo_base_dir: ~/webdev/github/coder
+#+hugo_section: posts
 #+startup: content
 #+hugo_auto_set_lastmod: t
 #+hugo_categories: project python

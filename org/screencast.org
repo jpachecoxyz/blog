@@ -1,14 +1,12 @@
-:PROPERTIES:
-:ID:       ca138eb0-5bef-425c-8f57-017508873541
-:END:
 #+TITLE: Toggle screencast record.
 #+AUTHOR: Javier Pacheco
 #+DESCRIPTION: A shell script that records the screen on wayland.
-#+hugo_base_dir: ~/webdev/javier
+#+hugo_base_dir: ~/webdev/github/coder
+#+hugo_section: posts
 #+startup: content
 #+hugo_auto_set_lastmod: t
-#+hugo_categories: script hyprland
-#+date: [2024-23-29]
+#+hugo_categories: project python
+#+data: [2024-07-01]
 #+seq_todo: todo doing published
 
 * Toggle record screen script.
