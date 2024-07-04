@@ -2,6 +2,7 @@ baseURL = 'https://jpachecoxyz.github.io'
 languageCode = 'en-us'
 title = 'Javier Pacheco - Blog'
 
+
 theme = "poison"
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
