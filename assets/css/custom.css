@@ -1,0 +1,44 @@
+.lead {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.page, .post {
+    margin-bottom: 4em;
+    text-align: justify;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+}
+
+.sidebar-about h1 {
+    font-size: 1.2em;
+    /* font-family: "JetBrains Mono"; */
+    font-family: "IBM Plex Mono", monospace;
+    stroke-width: 2;
+    stroke: #365FA0;
+}
+
+.sidebar-about img {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid var(--sidebar-img-border-color);
+    border-radius: 5%;
+    height: 160px;
+    width: 160px;
+}
+
+.sidebar-about img {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid var(--sidebar-img-border-color);
+    border-radius: 5%;
+    height: 160px;
+    width: 160px;
+}
+
+.sidebar-about h1 {
+    font-size: 1.2em;
+    font-family: "IBM Plex Mono", monopace;
+}
