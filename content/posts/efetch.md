@@ -3,7 +3,7 @@ title = "Efetch.el"
 author = ["Javier Pacheco"]
 description = "A emacs fetching tool."
 date = 2024-01-13T04:11:00-06:00
-lastmod = 2024-07-05T04:27:43-05:00
+lastmod = 2024-07-05T18:02:51-05:00
 tags = ["emacs", "fetch"]
 draft = false
 +++

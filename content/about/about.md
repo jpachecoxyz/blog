@@ -2,8 +2,8 @@
 title = "About me."
 author = ["Javier Pacheco"]
 description = "My personal information"
-date = 2024-07-04
-lastmod = 2024-07-05T04:27:43-05:00
+date = 2024-01-05T18:00:00-06:00
+lastmod = 2024-07-05T18:02:51-05:00
 draft = false
 +++
 

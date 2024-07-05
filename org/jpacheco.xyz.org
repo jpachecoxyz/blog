@@ -1,14 +1,15 @@
 #+TITLE: jpacheco.xyz
 #+AUTHOR: Javier Pacheco
 #+DESCRIPTION: My website posts & projects.
-#+hugo_base_dir: ~/webdev/github/test/
+#+hugo_base_dir: ~/webdev/blog/
 #+startup: content
 #+hugo_auto_set_lastmod: t
 #+date: 2024-07-04
-#+seq_todo: TODO DOING DONE
+#+seq_todo: TODO DONE
 
 
 * DONE About me.
+CLOSED: [2024-01-05 Fri 18:00]
 :PROPERTIES:
 :EXPORT_FILE_NAME: about
 :EXPORT_DESCRIPTION: My personal information
@@ -39,6 +40,7 @@ See my whole information [[file:/documents/cv.pdf][here]].
 - [[https://github.com/engjpacheco/noobemacs][Noobemacs, a minimal emacs configuration with evil mode.]]
 - [[https://github.com/engjpacheco/pymetrics][pymetrics, a python gui app to manage maintenance logs.]]
   
+
 * DONE Screen Record                          :shell:script:hyprland:wayland:
 CLOSED: [2024-03-15 Fri 04:14]
 :PROPERTIES:
@@ -143,6 +145,7 @@ case $OPT in
 esac
 #+end_src
 
+
 * DONE Efetch.el                                                :emacs:fetch:
 CLOSED: [2024-01-13 Sat 04:11]
 :PROPERTIES:
@@ -200,6 +203,7 @@ The project is open to changes, improvements, and collaborations.
 ** Get Started
 
 Enhance your Emacs experience with =efetch.el=! Stay informed about your environment effortlessly. Download and integrate it into your Emacs setup today.
+
 
 * DONE Void linux bootstrap.                           :void:installer:linux:
 :PROPERTIES:
@@ -281,7 +285,6 @@ When the =postinsall.sh= script finishes, you only need to reboot and enjoy your
 When it finish you need to run the =postinstall.sh= script, that is going to install
 the *X server* and some other "necessary" packages.
 
-
 ** The custom.sh script
 
 This is going to install my personal dotfiles, and a specific packages that I use:
@@ -301,3 +304,41 @@ sh custom.sh -b dev # especify the name of a custom branch in case of needed.
 - [[https://codeberg.org/jpacheco/voidstrap][Voidstrap.]]
 - [[https://docs.voidlinux.org/][Voidlinux Documentation.]] 
 - [[https://git.disroot.org/tuxliban/tutoriales_void/src/branch/master/Gu%C3%ADas][Tuxliban guides.]]
+
+  
+
+
+* TODO Your blog in emacs.                                       :emacs:hugo:
+:PROPERTIES:
+:EXPORT_FILE_NAME: your-blog-in-emacs
+:EXPORT_DESCRIPTION: How to develope your blog using emacs & HUGO
+:DATE:     07-05-2024
+:EXPORT_HUGO_SECTION: posts
+:END:
+
+** What do you need?.
+In order to start developing your blog site within emacs you need to require =ox-hugo=, an emacs package for export your org files to a =marckdown= files. I'm not going to write about how to install =ox-hugo= because I asuming that you already knows how to install emacs packages.
+
+Of course we are going to use =hugo=, so we also need it installed, so this is what we need:
+- emacs & ox-hugo.
+- hugo.
+- git (for develop and hosting your blog for free 😀)
+
+** The blog structure.
+The structure of the blog is very simple
+#+begin_example
+my-blog
+.
+├── archetypes
+│   └── default.md
+├── assets
+├── content
+├── data
+├── hugo.toml
+├── i18n
+├── layouts
+├── static
+└── themes
+#+end_example
+
+The first thing that you need to do is to select a theme, a theme, is basically the apearance of the site, not only the css or if the web have dark/light mode, is more like how your site is composed. Here you can find some [[https:themes.gohugo.io/][themes.]]
