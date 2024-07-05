@@ -1,16 +1,12 @@
 +++
-title = "Toggle screencast record."
+title = "Screen Record"
 author = ["Javier Pacheco"]
-description = "A shell script that records the screen on wayland."
-lastmod = 2024-07-03T05:37:59-05:00
-categories = ["project", "python"]
-draft = false
+description = "Script to record in hyprland"
+date = 2024-07-04
+lastmod = 2024-07-04T21:47:28-05:00
+tags = ["shell", "script", "hyprland", "wayland"]
+draft = true
 +++
-
-
-
-
-## Toggle record screen script. {#toggle-record-screen-script-dot}
 
 This script record the screen with the `wf-recorder` tool, it can be the hole screen or a specific area of it.
 The script is going to store the video in `/tmp/screencast.mp4`, this script only store one video, personally I think that have more than one record is a mess, more if you only wants to share a quick screencast to _telegram, irc, cinny_ or even to share it through `0x0.st`.

@@ -1,7 +1,10 @@
 +++
-title = "About Me"
-lastmod = 2024-07-03T05:35:47-05:00
-categories = ["emacs", "hugo"]
+title = "About me"
+author = ["Javier Pacheco"]
+description = "My personal information"
+date = 2024-07-04
+lastmod = 2024-07-04T21:47:28-05:00
+tags = ["me"]
 draft = false
 +++
 
