@@ -1,18 +1,18 @@
 #+TITLE: jpacheco.xyz
 #+AUTHOR: Javier Pacheco
 #+DESCRIPTION: My website posts & projects.
-#+hugo_base_dir: ~/webdev/blog
+#+hugo_base_dir: ~/webdev/github/test/
 #+startup: content
 #+hugo_auto_set_lastmod: t
 #+date: 2024-07-04
+#+seq_todo: TODO DOING DONE
 
 
-* About me                                                               :me:
+* DONE About me.
 :PROPERTIES:
 :EXPORT_FILE_NAME: about
 :EXPORT_DESCRIPTION: My personal information
 :EXPORT_HUGO_SECTION: about
-:DRAFT: true
 :END:
 
 Greetings! I'm Javier Pacheco, a dedicated Industrial Maintenance Engineer with a rich academic foundation from the prestigious *UTM* in *H. Matamoros Tamaulipas,Mexico*. Over the span of 12 fruitful years, I've been an integral part of the automotive industry, contributing my expertise in a multitude of critical domains.
@@ -39,14 +39,14 @@ See my whole information [[file:/documents/cv.pdf][here]].
 - [[https://github.com/engjpacheco/noobemacs][Noobemacs, a minimal emacs configuration with evil mode.]]
 - [[https://github.com/engjpacheco/pymetrics][pymetrics, a python gui app to manage maintenance logs.]]
   
-
-* TODO Screen Record                          :shell:script:hyprland:wayland:
+* DONE Screen Record                          :shell:script:hyprland:wayland:
+CLOSED: [2024-03-15 Fri 04:14]
 :PROPERTIES:
 :EXPORT_FILE_NAME: screen-record
 :EXPORT_DESCRIPTION: Script to record in hyprland
 :EXPORT_HUGO_SECTION: posts
-:HUGO_DRAFT: true
 :END:
+
 This script record the screen with the =wf-recorder= tool, it can be the hole screen or a specific area of it.
 The script is going to store the video in =/tmp/screencast.mp4=, this script only store one video, personally I think that have more than one record is a mess, more if you only wants to share a quick screencast to /telegram, irc, cinny/ or even to share it through =0x0.st=.
 
@@ -143,3 +143,161 @@ case $OPT in
 esac
 #+end_src
 
+* DONE Efetch.el                                                :emacs:fetch:
+CLOSED: [2024-01-13 Sat 04:11]
+:PROPERTIES:
+:EXPORT_FILE_NAME: efetch
+:EXPORT_DESCRIPTION: A emacs fetching tool.
+:CREATED:     2023-07-05
+:EXPORT_HUGO_SECTION: posts
+:END:
+
+#+BEGIN_PREVIEW
+Embrace a new level of Emacs mastery with =efetch.el= – a powerful and user-friendly Emacs Fetching Tool. Designed for enthusiasts who crave insights into their Emacs environment, =efetch.el= provides a seamless way to peek under the hood of your setup. With just a simple command, unlock a left-side buffer showcasing key details such as Emacs version, host information, user details, installed packages, active theme, and default font. Customizable and accessible, this tool not only delivers a quick snapshot of your Emacs configuration but also opens the door for collaborative enhancements. Join the community on [GitHub](https://github.com/engjpacheco/efetch.el), contribute your ideas, and elevate your Emacs experience with =efetch.el= today!
+#+END_PREVIEW
+
+#+begin_center
+#+CAPTION: efetch.el tool in the left side of the frame.
+[[/images/content/efetch.png]]
+#+end_center
+
+** Overview
+Are you an Emacs enthusiast who loves to keep track of your environment details? Look no further! We are excited to introduce =efetch.el= - the Emacs Fetching Tool. This nifty extension provides a quick and informative snapshot of your Emacs setup, helping you stay in the know about your environment configuration.
+
+** Features
+- **Quick Access**: Invoke =efetch= with a simple command to access a left-side buffer displaying essential information about your Emacs environment.
+
+- **Information at a Glance**: Get a concise overview, including Emacs version, host details, user information, installed packages, active theme, and default font.
+
+- **Customization**: Tailor the appearance and information displayed in the =efetch= buffer to suit your preferences.
+
+- **Convenient Keyboard Shortcut**: Close the =efetch= buffer and its window effortlessly with the =q= key.
+
+** How to Use
+1. **Installation**: Add the following line to your Emacs configuration:
+
+ #+BEGIN_SRC emacs-lisp
+(require 'efetch)
+ #+END_SRC
+
+Ensure the =efetch.el= file is in a directory included in your =load-path=.
+
+2. **Usage**: Invoke =efetch= interactively using:
+
+#+begin_example
+M-x efetch
+#+end_example
+
+The information will be displayed in a left-side buffer named *efetch-popup*.
+
+** Customization
+Feel free to customize the appearance or the information displayed in the =efetch= buffer by modifying the relevant sections in the =efetch= function.
+
+** Contribution
+We welcome contributions and feedback! =efetch.el= is hosted on [[https://github.com/engjpacheco/efetch.el][github]]. Feel free to [[https://github.com/engjpacheco/efetch.el/fork][fork the repository]] and submit pull requests. 
+The project is open to changes, improvements, and collaborations.
+
+** Get Started
+
+Enhance your Emacs experience with =efetch.el=! Stay informed about your environment effortlessly. Download and integrate it into your Emacs setup today.
+
+* DONE Void linux bootstrap.                           :void:installer:linux:
+:PROPERTIES:
+:EXPORT_FILE_NAME: voidstrap
+:EXPORT_DESCRIPTION: A void linux semi-automated installer.
+:DATE:     07-05-2024
+:EXPORT_HUGO_SECTION: projects
+:END:
+
+#+BEGIN_PREVIEW
+This is the first post of the 2024, this is a project that I am working on in the last
+year, is a minimialist voidlinux instalator it is based in some recomendations in 
+a guides that some friends of my have but "semiautomated".
+#+END_PREVIEW
+
+** VoidStrap installer.
+A basic minimalist installer of =void-linux= with some packages to get ready to enjoy
+this amazing GNU/Linux distribution.
+
+** Usage:
+
+*** Running install.sh
+
+Download the iso, and once in root inside the live, git clone this repo:
+(You need to update inside the iso and install =git=)
+
+NOTE: there are 3 =branches:=
+- main :: This will install =void-musl=.
+- glibc :: This will install =void-glibc=.
+- dual :: This will install =void-glibc= dual boot with =Windows=.
+  - *This branch is tested only with =Windows=, I never try it with other distributions.*
+  - If you want musl you can change the link to the mirror in the =install.sh= script:
+#+begin_example
+- Change this in line 11:
+export XBPS_ARCH=x86_64 && xbps-install -Suy -R http://mirrors.servercentral.com/voidlinux/current -r /mnt \
+- For this:
+export XBPS_ARCH=x86_64-musl && xbps-install -Suy -R http://mirrors.servercentral.com/voidlinux/current/musl -r /mnt \
+#+end_example
+    
+#+begin_src shell
+git clone https://git.disroot.org/jpacheco/voidstrap
+cd voidstrap
+sh install.sh
+#+end_src
+
+Once there the script will open =cfdisk=, and you need to format the HDD in this 
+specific format:
+#+begin_example
+- /dev/sdX1 -> as the boot partition.
+- /dev/sdY2 -> as the swap partition.
+- /dev/sdZ3 -> as the root partition.
+#+end_example
+
+NOTE: Replace X,Y & Z for your partition name.
+I consider to have this structure of partition, but you can change it, but you must
+change the code in =postinstall.sh= when the scripts make the =fstab= archive.
+
+*Make sure you do a backup of your files before doing crazy things and trust anyone script*
+
+When the =install.sh= script finish, you need to run the postinstall script located in =/root folder:=
+
+*** Running postinstall.sh
+
+This script its going to create some configuration files, like: =fstab=, =rc.conf=,
+change the password of =root=, and add user(s).
+
+#+begin_src shell
+xchroot /mnt
+#+end_src
+
+Then run the =chroot.sh= script.
+#+begin_src shell
+sh /root/postinstall.sh
+#+end_src
+
+When the =postinsall.sh= script finishes, you only need to reboot and enjoy your
+*Void-Linux* distribution.
+
+When it finish you need to run the =postinstall.sh= script, that is going to install
+the *X server* and some other "necessary" packages.
+
+
+** The custom.sh script
+
+This is going to install my personal dotfiles, and a specific packages that I use:
+#+begin_src shell
+sh /root/custom.sh
+#+end_src
+
+But you can specify your dotfiles repositories and others that you require whit some parameters:
+
+#+begin_src 
+sh custom.sh -r https://codeberg.org/jpacheco/dotfiles # specify a repo url.
+sh custom.sh -p otherprogfile.csv # especify a custom package archive to install.
+sh custom.sh -b dev # especify the name of a custom branch in case of needed.
+#+end_src
+
+** References:
+- [[https://codeberg.org/jpacheco/voidstrap][Voidstrap.]]
+- [[https://docs.voidlinux.org/][Voidlinux Documentation.]] 
+- [[https://git.disroot.org/tuxliban/tutoriales_void/src/branch/master/Gu%C3%ADas][Tuxliban guides.]]

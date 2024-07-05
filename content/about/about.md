@@ -1,10 +1,9 @@
 +++
-title = "About me"
+title = "About me."
 author = ["Javier Pacheco"]
 description = "My personal information"
 date = 2024-07-04
-lastmod = 2024-07-04T21:47:28-05:00
-tags = ["me"]
+lastmod = 2024-07-05T04:27:43-05:00
 draft = false
 +++
 

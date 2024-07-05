@@ -2,10 +2,10 @@
 title = "Screen Record"
 author = ["Javier Pacheco"]
 description = "Script to record in hyprland"
-date = 2024-07-04
-lastmod = 2024-07-04T21:47:28-05:00
+date = 2024-03-15T04:14:00-05:00
+lastmod = 2024-07-05T04:27:43-05:00
 tags = ["shell", "script", "hyprland", "wayland"]
-draft = true
+draft = false
 +++
 
 This script record the screen with the `wf-recorder` tool, it can be the hole screen or a specific area of it.

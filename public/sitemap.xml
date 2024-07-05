@@ -3,46 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-04T21:44:35-05:00</lastmod>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2024-07-04T20:18:22-05:00</lastmod>
+    <loc>http://localhost:1313/tags/job/</loc>
+    <lastmod>2024-07-05T00:59:09-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/post3/</loc>
-    <lastmod>2024-07-04T19:31:13-05:00</lastmod>
+    <loc>http://localhost:1313/posts/my-job/</loc>
+    <lastmod>2024-07-05T00:59:09-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2024-07-04T21:44:34-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/about/</loc>
-    <lastmod>2024-07-04T21:44:34-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/emacs/</loc>
-    <lastmod>2024-07-04T20:18:22-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2024-07-04T20:18:22-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/org/</loc>
-    <lastmod>2024-07-04T20:18:22-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ox/</loc>
-    <lastmod>2024-07-04T20:18:22-05:00</lastmod>
+    <loc>http://localhost:1313/tags/personal/</loc>
+    <lastmod>2024-07-05T00:59:09-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-07-04T21:44:35-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/post2/</loc>
-    <lastmod>2024-07-04T20:18:22-05:00</lastmod>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-07-04T20:18:22-05:00</lastmod>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/voidstrap-a-tui-void-linux-installator/</loc>
-    <lastmod>2024-07-03T05:39:15-05:00</lastmod>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/curso_plc/</loc>
-    <lastmod>2024-07-04T16:16:49-05:00</lastmod>
+    <loc>http://localhost:1313/about/about/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/installer/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/void/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/voidstrap/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hyprland/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/screen-record/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/script/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/shell/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/wayland/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/efetch/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/emacs/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/fetch/</loc>
+    <lastmod>2024-07-05T04:27:43-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
   </url>

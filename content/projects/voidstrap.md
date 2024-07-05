@@ -1,12 +1,12 @@
 +++
-title = "Voidstrap a tui void linux installator"
+title = "Void linux bootstrap."
 author = ["Javier Pacheco"]
-lastmod = 2024-07-03T05:39:15-05:00
-categories = ["project", "venom", "linux"]
+description = "A void linux semi-automated installer."
+date = 2024-07-04
+lastmod = 2024-07-05T04:27:43-05:00
+tags = ["void", "installer", "linux"]
 draft = false
 +++
-
-
 
 <div class="PREVIEW">
 
