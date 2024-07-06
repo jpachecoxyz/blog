@@ -5,7 +5,7 @@
 #+startup: content
 #+hugo_auto_set_lastmod: t
 #+date: 2024-07-04
-#+seq_todo: TODO DONE
+#+seq_todo: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)
 
 
 * DONE About me.
