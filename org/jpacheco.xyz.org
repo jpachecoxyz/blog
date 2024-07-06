@@ -342,3 +342,13 @@ my-blog
 #+end_example
 
 The first thing that you need to do is to select a theme, a theme, is basically the apearance of the site, not only the css or if the web have dark/light mode, is more like how your site is composed. Here you can find some [[https:themes.gohugo.io/][themes.]]
+
+
+* TODO Tips to learn how to program a PLC.                       :tips:learing:plc:
+:PROPERTIES:
+:EXPORT_FILE_NAME: plc-tips
+:EXPORT_DESCRIPTION: Some tips to improve your PLC learning.
+:DATE:     07-06-2024
+:EXPORT_HUGO_SECTION: posts
+:END:
+
