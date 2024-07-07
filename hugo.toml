@@ -27,7 +27,7 @@ title = "Javier Pacheco"
 description = "Welcome to my blog."
 
 # unicode/emoji logo:
-logo = ""
+# logo = "🧔"
 # or use an image:
 # logo_image = "images/jp.svg"
 
@@ -47,14 +47,14 @@ title = "Youtube"
 url = "https://youtube.com/@jp-codepath"
 
 [[params.socialLinks]]
-icon = "fa-solid fa-envelope"
-title = "Email"
-url = "mailto:javier@jpacheco.xyz"
-
-[[params.socialLinks]]
 icon = "fa-brands fa-linkedin"
 title = "LinkedIn"
 url = "https://linkedin.com/in/jpachecom4"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:javier@jpacheco.xyz"
 
 [menu]
 
@@ -108,4 +108,3 @@ unsafe = true
 
   [services.twitter]
     disableInlineCSS = true
-

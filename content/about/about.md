@@ -3,12 +3,12 @@ title = "About me."
 author = ["Javier Pacheco"]
 description = "My personal information"
 date = 2024-01-05T18:00:00-06:00
-lastmod = 2024-07-07T15:27:08-05:00
+lastmod = 2024-07-07T16:28:06-05:00
 draft = false
 toc = true
 +++
 
-{{< figure src="/images/jp.jpg" >}}
+{{< figure src="/images/jp.jpg" width="200px" >}}
 
 Greetings! I'm Javier Pacheco, a dedicated Industrial Maintenance Engineer with a rich academic foundation from the prestigious **UTM** in **H. Matamoros Tamaulipas,Mexico**. Over the span of 12 fruitful years, I've been an integral part of the automotive industry, contributing my expertise in a multitude of critical domains.
 

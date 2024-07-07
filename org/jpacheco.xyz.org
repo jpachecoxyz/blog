@@ -17,6 +17,7 @@ CLOSED: [2024-01-05 Fri 18:00]
 :EXPORT_HUGO_SECTION: about
 :END:
 
+#+ATTR_HTML: :width 200px :style float:left;margin:0px 10px 10px 0px;
 [[file:/images/jp.jpg]]
 
 Greetings! I'm Javier Pacheco, a dedicated Industrial Maintenance Engineer with a rich academic foundation from the prestigious *UTM* in *H. Matamoros Tamaulipas,Mexico*. Over the span of 12 fruitful years, I've been an integral part of the automotive industry, contributing my expertise in a multitude of critical domains.
