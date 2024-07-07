@@ -1,0 +1,12 @@
+<!-- {{- partial "lang.html" . -}} -->
+<!-- <p class="copyright">{{ .Site.Copyright | markdownify }}</p> -->
+<p class="advertisement"># :(){ :|:& };: </p>
+
+<!-- Custom javascript -->
+<!-- {{ range .Site.Params.custom_js -}} -->
+<!--    <script type="text/javascript" src="{{ . | absURL }}"></script> -->
+<!-- {{- end }} -->
+
+{{ if (findRE "pre.*?" .Content 1) }}
+<script src="/js/copy-code.js"></script>
+{{ end  }}

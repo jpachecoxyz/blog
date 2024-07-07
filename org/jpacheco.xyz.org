@@ -3,6 +3,7 @@
 #+DESCRIPTION: My website posts & projects.
 #+hugo_base_dir: ~/webdev/blog/
 #+startup: content
+#+hugo_custom_front_matter: toc true
 #+hugo_auto_set_lastmod: t
 #+date: 2024-07-04
 #+seq_todo: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)
@@ -15,6 +16,8 @@ CLOSED: [2024-01-05 Fri 18:00]
 :EXPORT_DESCRIPTION: My personal information
 :EXPORT_HUGO_SECTION: about
 :END:
+
+[[file:/images/jp.jpg]]
 
 Greetings! I'm Javier Pacheco, a dedicated Industrial Maintenance Engineer with a rich academic foundation from the prestigious *UTM* in *H. Matamoros Tamaulipas,Mexico*. Over the span of 12 fruitful years, I've been an integral part of the automotive industry, contributing my expertise in a multitude of critical domains.
 
@@ -344,11 +347,15 @@ my-blog
 The first thing that you need to do is to select a theme, a theme, is basically the apearance of the site, not only the css or if the web have dark/light mode, is more like how your site is composed. Here you can find some [[https:themes.gohugo.io/][themes.]]
 
 
-* TODO Tips to learn how to program a PLC.                       :tips:learing:plc:
+* WAIT Tips to learn how to program a PLC.                 :tips:learing:plc:
 :PROPERTIES:
 :EXPORT_FILE_NAME: plc-tips
 :EXPORT_DESCRIPTION: Some tips to improve your PLC learning.
 :DATE:     07-06-2024
 :EXPORT_HUGO_SECTION: posts
+:END:
+:LOGBOOK:
+- State "WAIT"       from "TODO"       [2024-07-06 Sat 07:26] \\
+  Need to take more notes about this topic.
 :END:
 

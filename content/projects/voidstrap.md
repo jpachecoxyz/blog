@@ -3,9 +3,10 @@ title = "Void linux bootstrap."
 author = ["Javier Pacheco"]
 description = "A void linux semi-automated installer."
 date = 2024-07-04
-lastmod = 2024-07-05T18:51:21-05:00
+lastmod = 2024-07-07T15:27:08-05:00
 tags = ["void", "installer", "linux"]
 draft = false
+toc = true
 +++
 
 <div class="PREVIEW">

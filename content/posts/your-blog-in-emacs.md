@@ -3,9 +3,10 @@ title = "Your blog in emacs."
 author = ["Javier Pacheco"]
 description = "How to develope your blog using emacs & HUGO"
 date = 2024-07-04
-lastmod = 2024-07-05T18:51:21-05:00
+lastmod = 2024-07-07T15:27:08-05:00
 tags = ["emacs", "hugo"]
 draft = true
+toc = true
 +++
 
 ## What do you need?. {#what-do-you-need-dot}
