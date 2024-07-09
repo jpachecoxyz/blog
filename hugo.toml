@@ -1,4 +1,4 @@
-publishDir = "/home/javier/webdev/jpachecoxyz.github.io"
+publishDir = "../jpachecoxyz.github.io"
 baseURL = 'https://jpachecoxyz.github.io'
 theme = "risotto"
 title = "jpacheco.xyz"
