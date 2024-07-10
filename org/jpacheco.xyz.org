@@ -36,7 +36,7 @@ Beyond the technical facets, I am deeply invested in collaborative endeavors, fo
 See my whole information [[file:/documents/cv.pdf][here]].
 
 ** Where to Find Me
-- [[https://github.com/engjpacheco][GitHub.]]
+- [[https://github.com/jpachecoxyz][GitHub.]]
 - [[https://www.linkedin.com/in/jpachecom4/][LinkedIn.]]
 
 ** Projects that I'm currently develop.
@@ -160,7 +160,7 @@ CLOSED: [2024-01-13 Sat 04:11]
 :END:
 
 #+BEGIN_PREVIEW
-Embrace a new level of Emacs mastery with =efetch.el= – a powerful and user-friendly Emacs Fetching Tool. Designed for enthusiasts who crave insights into their Emacs environment, =efetch.el= provides a seamless way to peek under the hood of your setup. With just a simple command, unlock a left-side buffer showcasing key details such as Emacs version, host information, user details, installed packages, active theme, and default font. Customizable and accessible, this tool not only delivers a quick snapshot of your Emacs configuration but also opens the door for collaborative enhancements. Join the community on [GitHub](https://github.com/engjpacheco/efetch.el), contribute your ideas, and elevate your Emacs experience with =efetch.el= today!
+Embrace a new level of Emacs mastery with =efetch.el= – a powerful and user-friendly Emacs Fetching Tool. Designed for enthusiasts who crave insights into their Emacs environment, =efetch.el= provides a seamless way to peek under the hood of your setup. With just a simple command, unlock a left-side buffer showcasing key details such as Emacs version, host information, user details, installed packages, active theme, and default font. Customizable and accessible, this tool not only delivers a quick snapshot of your Emacs configuration but also opens the door for collaborative enhancements. Join the community on [[https://github.com/jpachecoxyz/efetch.el][Github]] contribute your ideas, and elevate your Emacs experience with =efetch.el= today!
 #+END_PREVIEW
 
 #+begin_center

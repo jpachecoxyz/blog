@@ -3,7 +3,7 @@ title = "Efetch.el"
 author = ["Javier Pacheco"]
 description = "A emacs fetching tool."
 date = 2024-01-13T04:11:00-06:00
-lastmod = 2024-07-09T03:55:33-05:00
+lastmod = 2024-07-10T05:36:12-05:00
 tags = ["emacs", "fetch"]
 draft = false
 toc = true
@@ -11,7 +11,7 @@ toc = true
 
 <div class="PREVIEW">
 
-Embrace a new level of Emacs mastery with `efetch.el` – a powerful and user-friendly Emacs Fetching Tool. Designed for enthusiasts who crave insights into their Emacs environment, `efetch.el` provides a seamless way to peek under the hood of your setup. With just a simple command, unlock a left-side buffer showcasing key details such as Emacs version, host information, user details, installed packages, active theme, and default font. Customizable and accessible, this tool not only delivers a quick snapshot of your Emacs configuration but also opens the door for collaborative enhancements. Join the community on [GitHub](<https://github.com/engjpacheco/efetch.el>), contribute your ideas, and elevate your Emacs experience with `efetch.el` today!
+Embrace a new level of Emacs mastery with `efetch.el` – a powerful and user-friendly Emacs Fetching Tool. Designed for enthusiasts who crave insights into their Emacs environment, `efetch.el` provides a seamless way to peek under the hood of your setup. With just a simple command, unlock a left-side buffer showcasing key details such as Emacs version, host information, user details, installed packages, active theme, and default font. Customizable and accessible, this tool not only delivers a quick snapshot of your Emacs configuration but also opens the door for collaborative enhancements. Join the community on [Github](https://github.com/jpachecoxyz/efetch.el) contribute your ideas, and elevate your Emacs experience with `efetch.el` today!
 
 </div>
 
