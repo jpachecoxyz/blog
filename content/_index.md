@@ -4,9 +4,9 @@ Hello! I’m Javier Pacheco, an enthusiast in automation and programming. I love
 
 ## Programming Learning Path
 I am currently learning some programming languages:
-1.  Python. 
-1.  C.
-1. 󰘧 Lisp.
+1. Python. 
+1. C.
+1. Lisp.
 
 ## Linux and Its Philosophy
 I am passionate about Linux because:
