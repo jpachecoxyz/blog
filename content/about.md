@@ -3,7 +3,7 @@ title = "About me."
 author = ["Javier Pacheco"]
 description = "My personal information"
 date = 2024-01-05T18:00:00-06:00
-lastmod = 2024-07-07T16:28:06-05:00
+lastmod = 2024-08-11T03:19:56-05:00
 draft = false
 toc = true
 +++
@@ -27,7 +27,7 @@ See my whole information [here](/documents/cv.pdf).
 
 ## Where to Find Me {#where-to-find-me}
 
--   [GitHub.](https://github.com/engjpacheco)
+-   [GitHub.](https://github.com/jpachecoxyz)
 -   [LinkedIn.](https://www.linkedin.com/in/jpachecom4/)
 
 
