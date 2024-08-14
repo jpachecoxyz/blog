@@ -3,13 +3,3 @@
   justify-content: center; /* Centers the icons horizontally */
   align-items: center;     /* Centers the icons vertically (if necessary) */
 }
-
-.jungle {
-    position: absolute;
-    top: 10%;       /* Adjusts the vertical position */
-    left: 52%;      /* Adjusts the horizontal position */
-    transform: translate(-50%, -50%); /* Centers the image */
-    z-index: 10;    /* Ensures the image is on top of other content */
-    max-width: 350px; /* Adjust size as needed */
-    height: auto;
-}

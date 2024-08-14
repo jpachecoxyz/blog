@@ -3,9 +3,10 @@ title = "About me."
 author = ["Javier Pacheco"]
 description = "My personal information"
 date = 2024-01-05T18:00:00-06:00
-lastmod = 2024-08-11T03:19:56-05:00
+lastmod = 2024-08-14T12:18:31-05:00
+tags = ["about"]
 draft = false
-toc = true
+image = "images/thumbnails/jp.png"
 +++
 
 {{< figure src="/images/jp.jpg" width="200px" >}}
