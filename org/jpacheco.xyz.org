@@ -9,12 +9,12 @@
 #+seq_todo: TODO(t) WAIT(w@/!) | DONE(d!)
 
 
-* DONE About me.
+* DONE About me.                                                      :about:
 CLOSED: [2024-01-05 Fri 18:00]
 :PROPERTIES:
 :EXPORT_FILE_NAME: about
 :EXPORT_DESCRIPTION: My personal information
-:EXPORT_HUGO_SECTION: about
+# :EXPORT_HUGO_SECTION: about
 :END:
 
 #+ATTR_HTML: :width 200px :style float:left;margin:0px 10px 10px 0px;
