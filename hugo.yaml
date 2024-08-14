@@ -17,7 +17,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts"]
+mainsections: ["posts", "projects"]
 
 minify:
   disableXML: true
@@ -66,6 +66,7 @@ params:
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
+  images: ["images/jp.jpg"]
   # comments: false
 
   homeInfoParams:
@@ -128,7 +129,7 @@ params:
   assets:
     disableHLJS: true
     disableFingerprinting: true
-    favicon: "<link /favicon.ico"
+    favicon: "/favicon.ico"
   #     favicon16x16: "<link / abs url>"
   #     favicon32x32: "<link / abs url>"
   #     apple_touch_icon: "<link / abs url>"

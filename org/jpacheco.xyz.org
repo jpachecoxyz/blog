@@ -415,6 +415,7 @@ CLOSED: [2024-08-11 Sun 03:00]
 :EXPORT_DESCRIPTION: A GUI app written in python to store maintenace logs.
 :DATE:     08-11-2024
 :EXPORT_HUGO_SECTION: projects
+:EXPORT_HUGO_WEIGHT: 1
 :END:
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2024-08-11 Sun 03:00]
@@ -460,6 +461,7 @@ CLOSED: [2024-08-13 Tue 05:06]
 :EXPORT_DESCRIPTION: My opinion about emacs and neovim about writting and programming.
 :DATE:     08-13-2024
 :EXPORT_HUGO_SECTION: posts
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :image "images/thumbnails/emacs.png"
 :END:
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2024-08-13 Tue 05:06]

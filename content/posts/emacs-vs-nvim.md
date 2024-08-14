@@ -3,10 +3,10 @@ title = "Emacs vs Neovim"
 author = ["Javier Pacheco"]
 description = "My opinion about emacs and neovim about writting and programming."
 date = 2024-08-13T05:06:00-05:00
-lastmod = 2024-08-13T05:24:11-05:00
+lastmod = 2024-08-13T22:08:05-05:00
 tags = ["emacs", "nvim", "programming", "writting"]
 draft = false
-toc = true
+image = "images/thumbnails/emacs.png"
 +++
 
 ## Neovim for Programming {#neovim-for-programming}

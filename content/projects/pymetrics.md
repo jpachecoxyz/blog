@@ -3,9 +3,10 @@ title = "Pymetrics"
 author = ["Javier Pacheco"]
 description = "A GUI app written in python to store maintenace logs."
 date = 2024-08-11T03:00:00-05:00
-lastmod = 2024-08-13T05:24:11-05:00
+lastmod = 2024-08-13T22:08:05-05:00
 tags = ["python", "maintenance"]
 draft = false
+weight = 1
 toc = true
 +++
 
