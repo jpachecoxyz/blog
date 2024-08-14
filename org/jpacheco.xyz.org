@@ -15,6 +15,7 @@ CLOSED: [2024-01-05 Fri 18:00]
 :EXPORT_FILE_NAME: about
 :EXPORT_DESCRIPTION: My personal information
 # :EXPORT_HUGO_SECTION: about
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :image "images/thumbnails/jp.png"
 :END:
 
 #+ATTR_HTML: :width 200px :style float:left;margin:0px 10px 10px 0px;
