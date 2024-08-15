@@ -4,8 +4,6 @@
   align-items: center;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.entry-header {
+  text-align: center;
 }
