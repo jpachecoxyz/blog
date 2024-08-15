@@ -3,7 +3,7 @@ title = "How I made my blog with emacs and hugo"
 author = ["Javier Pacheco"]
 description = "A overview of how I write and develop my web blog using emacs & hugo"
 date = 2024-08-14T20:41:00-05:00
-lastmod = 2024-08-14T21:49:05-05:00
+lastmod = 2024-08-14T21:52:33-05:00
 tags = ["emacs", "blog", "hugo"]
 draft = false
 toc = true
@@ -43,7 +43,7 @@ And to build the static web I use [HUGO](https://gohugo.io/getting-started/quick
 
 ## Org and its configuration. {#org-and-its-configuration-dot}
 
-`HUGO` uses marckdown to manage the sites, posts, etc. but because we where using emacs, (we don't like others than org syntax), so there are a lot of variables that `ox-hugo` handle in order to been exported to marckdown syntax.
+`HUGO` uses markdown to manage the sites, posts, etc. but because we where using emacs, (we don't like others than org syntax), so there are a lot of variables that `ox-hugo` handle in order to been exported to markdown syntax.
 
 In my case I like to develop my whole blog into a single org-file
 
@@ -70,7 +70,7 @@ These are the most important and relevant to use within HUGO:
 
 -   _#+HUGO_BASE_DIR:_
 
-This declare where yout HUGO site is located, basically in the path where you run `hugo new site my-site`.
+This declare where you HUGO site is located, basically in the path where you run `hugo new site my-site`.
 
 -   _#+HUGO_CUSTOM_FRONT_MATTER_:
 
@@ -93,14 +93,14 @@ Write a post is very easy to start, you only need to add a org lvl-1 header, and
 
 -   _:EXPORT_FILE_NAME_:
 
-This is how your file is going to be stored, you may or not add the `.md` extencion.
+This is how your file is going to be stored, you may or not add the `.md` extension.
 
 -   _:EXPORT_HUGO_SECTION_:
 
 Here is the tricky part, if you have multiple sections like: post, projects, topics, etc. this is where the file is going to be stored.
 
-If the subheader starts with a TODO, when exported the md metadata is going to have `draftt: true`, which means even the archive is going to be created when you run hugo to create your site that md archive is going to be ignored until you finish (remove the TODO or change it to DONE.).
+If the sub-header starts with a TODO, when exported the md metadata is going to have `draftt: true`, which means even the archive is going to be created when you run hugo to create your site that md archive is going to be ignored until you finish (remove the TODO or change it to DONE.).
 
-And tha's it, you can search mor options for manage the front matter in hugo in this [page.](https://ox-hugo.scripter.co/)
+And tha's it, you can search more options for manage the front matter in hugo in this [page.](https://ox-hugo.scripter.co/)
 
 Thanks for reading.
