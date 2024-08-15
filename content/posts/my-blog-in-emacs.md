@@ -3,7 +3,7 @@ title = "How I made my blog with emacs and hugo"
 author = ["Javier Pacheco"]
 description = "A overview of how I write and develop my web blog using emacs & hugo"
 date = 2024-08-14T20:41:00-05:00
-lastmod = 2024-08-14T21:52:33-05:00
+lastmod = 2024-08-14T22:01:34-05:00
 tags = ["emacs", "blog", "hugo"]
 draft = false
 toc = true
@@ -82,7 +82,7 @@ This is for enable/disable the toc of the posts when ox-hugo exported to md form
 Write a post is very easy to start, you only need to add a org lvl-1 header, and add a more metadata (properties). The sub-headers of the post are going to be org-lvl-3 headers, and so on.
 
 ```org
-** TODO How I made my blog with emacs and hugo               :emacs:blog:hugo:
+* TODO How I made my blog with emacs and hugo               :emacs:blog:hugo:
    :PROPERTIES:
    :EXPORT_FILE_NAME: my-blog-in-emacs
    :EXPORT_DESCRIPTION: A overview of how I write and develop my web blog using emacs & hugo
@@ -90,6 +90,12 @@ Write a post is very easy to start, you only need to add a org lvl-1 header, and
    :EXPORT_HUGO_SECTION: posts
    :END:
 ```
+<div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 3:</span>
+  Example of an article.
+</div>
+
+---
 
 -   _:EXPORT_FILE_NAME_:
 
@@ -101,6 +107,6 @@ Here is the tricky part, if you have multiple sections like: post, projects, top
 
 If the sub-header starts with a TODO, when exported the md metadata is going to have `draftt: true`, which means even the archive is going to be created when you run hugo to create your site that md archive is going to be ignored until you finish (remove the TODO or change it to DONE.).
 
-And tha's it, you can search more options for manage the front matter in hugo in this [page.](https://ox-hugo.scripter.co/)
+And that's it, you can search more options for manage the front matter in hugo in this [page.](https://ox-hugo.scripter.co/)
 
 Thanks for reading.

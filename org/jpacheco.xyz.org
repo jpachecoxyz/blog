@@ -549,8 +549,9 @@ This is for enable/disable the toc of the posts when ox-hugo exported to md form
 ** Writing the posts.
 Write a post is very easy to start, you only need to add a org lvl-1 header, and add a more metadata (properties). The sub-headers of the post are going to be org-lvl-3 headers, and so on.
 
+#+CAPTION: Example of an article.
 #+begin_src org
- ** TODO How I made my blog with emacs and hugo               :emacs:blog:hugo:
+ * TODO How I made my blog with emacs and hugo               :emacs:blog:hugo:
     :PROPERTIES:
     :EXPORT_FILE_NAME: my-blog-in-emacs
     :EXPORT_DESCRIPTION: A overview of how I write and develop my web blog using emacs & hugo
@@ -558,6 +559,7 @@ Write a post is very easy to start, you only need to add a org lvl-1 header, and
     :EXPORT_HUGO_SECTION: posts
     :END:
 #+end_src
+---
 
 - /:EXPORT_FILE_NAME/:
 This is how your file is going to be stored, you may or not add the =.md= extension.
@@ -566,6 +568,6 @@ Here is the tricky part, if you have multiple sections like: post, projects, top
 
 If the sub-header starts with a TODO, when exported the md metadata is going to have =draftt: true=, which means even the archive is going to be created when you run hugo to create your site that md archive is going to be ignored until you finish (remove the TODO or change it to DONE.).
 
-And tha's it, you can search more options for manage the front matter in hugo in this [[https://ox-hugo.scripter.co/][page.]]
+And that's it, you can search more options for manage the front matter in hugo in this [[https://ox-hugo.scripter.co/][page.]]
 
 Thanks for reading.
