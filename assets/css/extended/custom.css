@@ -1,5 +1,11 @@
 .social-icons {
   display: flex;
-  justify-content: center; /* Centers the icons horizontally */
-  align-items: center;     /* Centers the icons vertically (if necessary) */
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

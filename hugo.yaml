@@ -1,7 +1,7 @@
 publishDir: "../jpachecoxyz.github.io"
 baseURL: "https://jpacheco.xyz"
 languageCode: en-us
-title: ⚙️  jpachecoxyz 💻
+title: jpacheco.xyz
 
 theme: ["PaperMod"]
 
