@@ -3,7 +3,7 @@ title = "Pymetrics"
 author = ["Javier Pacheco"]
 description = "A GUI app written in python to store maintenace logs."
 date = 2024-08-11T03:00:00-05:00
-lastmod = 2024-08-14T22:01:34-05:00
+lastmod = 2024-08-15T11:33:06-05:00
 tags = ["python", "maintenance"]
 draft = false
 weight = 1
@@ -40,8 +40,8 @@ The project began when the maintenance manager reached out to me with a signific
 The maintenance log app provides several key benefits:
 
 -   **Enhanced Data Management:** All data is stored in a standardized CSV format, which can be easily imported into Excel for further analysis.
--   \*Improved KPI Tracking: By analyzing the recorded data, maintenance teams can generate KPI graphs in Excel to monitor performance metrics such as Mean Time to Repair (MTTR) and Mean Time Between Failures (MTBF).
--   Informed Decision-Making:\* The insights gained from the KPI graphs help in making informed decisions to improve machine reliability and reduce downtime.
+-   **Improved KPI Tracking**: By analyzing the recorded data, maintenance teams can generate KPI graphs in Excel to monitor performance metrics such as Mean Time to Repair (MTTR) and Mean Time Between Failures (MTBF).
+-   **Informed Decision-Making:** The insights gained from the KPI graphs help in making informed decisions to improve machine reliability and reduce downtime.
 
 
 ## Technical Details {#technical-details}
@@ -52,6 +52,14 @@ The app is built using Python, leveraging its robust data handling capabilities.
 ## Usage {#usage}
 
 The application is designed to be user-friendly, requiring minimal input from the maintenance team. The data entry process is streamlined, allowing technicians to quickly log failures and repairs without interrupting their workflow.
+
+<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
+
+<div class="org-center">
+
+{{< figure src="/projects/images/pymetrics/pymetrics.png" caption="<span class=\"figure-number\">Figure 1: </span>Pymetrics in light-mode." >}}
+
+</div>
 
 
 ## How to Get Started {#how-to-get-started}

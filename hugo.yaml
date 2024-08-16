@@ -70,7 +70,7 @@ params:
   # comments: false
 
   homeInfoParams:
-    Title: "👨‍💻 Welcome to my blog 📝"
+    Title: "Welcome to my blog 👨‍💻 "
     Content: >
 
       Hello! I’m Javier Pacheco, an enthusiast in automation and programming. I love innovating and automating processes to make life easier.

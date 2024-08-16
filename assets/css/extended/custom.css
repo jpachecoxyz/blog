@@ -1,3 +1,7 @@
+body {
+    font-family: 'JetBrains Mono';
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -5,5 +9,15 @@
 }
 
 .entry-header {
-  text-align: center;
+  /* text-align: center; */
+}
+
+p {
+  text-align: justify;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

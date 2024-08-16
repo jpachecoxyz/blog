@@ -437,14 +437,19 @@ The project began when the maintenance manager reached out to me with a signific
 ** Benefits
 The maintenance log app provides several key benefits:
 - *Enhanced Data Management:* All data is stored in a standardized CSV format, which can be easily imported into Excel for further analysis.
-- *Improved KPI Tracking: By analyzing the recorded data, maintenance teams can generate KPI graphs in Excel to monitor performance metrics such as Mean Time to Repair (MTTR) and Mean Time Between Failures (MTBF).
-- Informed Decision-Making:* The insights gained from the KPI graphs help in making informed decisions to improve machine reliability and reduce downtime.
+- *Improved KPI Tracking*: By analyzing the recorded data, maintenance teams can generate KPI graphs in Excel to monitor performance metrics such as Mean Time to Repair (MTTR) and Mean Time Between Failures (MTBF).
+- *Informed Decision-Making:* The insights gained from the KPI graphs help in making informed decisions to improve machine reliability and reduce downtime.
 
 ** Technical Details
 The app is built using Python, leveraging its robust data handling capabilities. The CSV format is chosen for its simplicity and compatibility with various data analysis tools.
 
 ** Usage
 The application is designed to be user-friendly, requiring minimal input from the maintenance team. The data entry process is streamlined, allowing technicians to quickly log failures and repairs without interrupting their workflow.
+
+#+begin_center
+#+CAPTION: Pymetrics in light-mode.
+[[/projects/images/pymetrics/pymetrics.png]]
+#+end_center
 
 ** How to Get Started
 You can access the source code and instructions for setting up the maintenance log app on GitHub: [[https://github.com/jpachecoxyz/pymetrics][Pymetrics Repository]].
@@ -518,7 +523,6 @@ And to build the static web I use [[https://gohugo.io/getting-started/quick-star
   :after ox)
 #+end_src
 
-
 ** Org and its configuration.
 =HUGO= uses markdown to manage the sites, posts, etc. but because we where using emacs, (we don't like others than org syntax), so there are a lot of variables that =ox-hugo= handle in order to been exported to markdown syntax.
 
@@ -571,3 +575,5 @@ If the sub-header starts with a TODO, when exported the md metadata is going to 
 And that's it, you can search more options for manage the front matter in hugo in this [[https://ox-hugo.scripter.co/][page.]]
 
 Thanks for reading.
+
+
