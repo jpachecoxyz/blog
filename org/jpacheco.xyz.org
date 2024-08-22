@@ -1,12 +1,12 @@
-#+TITLE: jpacheco.xyz
-#+AUTHOR: Javier Pacheco
-#+DESCRIPTION: My website posts & projects.
+#+title: jpacheco.xyz
+#+author: Javier Pacheco
+#+description: My website posts & projects.
 #+hugo_base_dir: ~/webdev/blog/
 #+startup: content
 #+hugo_custom_front_matter: toc true
 #+hugo_auto_set_lastmod: nil
 #+date: 2024-07-04
-#+tags: emacs(e) blog(b) post(p) project(P) linux(l) tecnology(t) wayland(w) script(s) work(w) personal(r)
+#+tags: emacs(e) linux(l) tecnology(t) wayland(w) script(s) work(w) personal(p)
 #+seq_todo: TODO(t) WAIT(w@/!) | DONE(d!)
 
 
@@ -47,7 +47,7 @@ See my whole information [[file:/documents/cv.pdf][here]].
 - [[https://github.com/engjpacheco/pymetrics][pymetrics, a python gui app to manage maintenance logs.]]
   
 
-* DONE Screen Record                                      :post:linux:script:
+* DONE Screen Record                                           :linux:script:
 CLOSED: [2024-03-15 Fri 04:14]
 :PROPERTIES:
 :EXPORT_FILE_NAME: screen-record
@@ -212,7 +212,7 @@ esac
 #+end_src
 
 
-* DONE Efetch.el                                          :emacs:post:script:
+* DONE Efetch.el                                               :emacs:script:
 CLOSED: [2024-01-13 Sat 04:11]
 :PROPERTIES:
 :EXPORT_FILE_NAME: efetch
@@ -271,7 +271,7 @@ The project is open to changes, improvements, and collaborations.
 Enhance your Emacs experience with =efetch.el=! Stay informed about your environment effortlessly. Download and integrate it into your Emacs setup today.
 
 
-* DONE Void linux bootstrap.                 :project:linux:tecnology:script:
+* DONE Void linux bootstrap.                         :linux:tecnology:script:
 :PROPERTIES:
 :EXPORT_FILE_NAME: voidstrap
 :EXPORT_DESCRIPTION: A void linux semi-automated installer.
@@ -374,7 +374,7 @@ sh custom.sh -b dev # especify the name of a custom branch in case of needed.
   
 
 
-* DONE Shell-utils                                     :project:linux:script:
+* DONE Shell-utils                                             :linux:script:
 :PROPERTIES:
 :EXPORT_FILE_NAME: shell-utils.org
 :EXPORT_DESCRIPTION: A github repo that stores shell scripts utilities for x and wayland.
@@ -432,7 +432,7 @@ We welcome contributions! If you'd like to contribute, please follow these steps
 For questions or suggestions, please open an issue on GitHub or contact [[mailto:javier@jpacheco.xyz][Javier Pacheco]].
 
 
-* DONE Share Screen in Hyprland.                     :hyprland:linux:wayland:
+* DONE Share Screen in Hyprland.                              :linux:wayland:
 CLOSED: [2024-08-11 Sun 02:52]
 :PROPERTIES:
 :EXPORT_FILE_NAME: share-screen-hyprland.org
@@ -470,7 +470,7 @@ That's it, that little command above solve my 1 day pain trying to share my scre
 Thanks for read me.
 
 
-* DONE Pymetrics                            :project:linux:tecnology:wayland:
+* DONE Pymetrics                                    :linux:tecnology:wayland:
 CLOSED: [2024-08-11 Sun 03:00]
 :PROPERTIES:
 :EXPORT_FILE_NAME: pymetrics.md
@@ -521,7 +521,7 @@ This maintenance log app is a practical tool for any industrial maintenance team
 Feel free to explore the project and contribute to its development by visiting the [[https://github.com/jpachecoxyz/pymetrics][Pymetrics Repository]] on GitHub.
 
 
-* DONE Emacs vs Neovim                   :emacs:blog:post:tecnology:personal:
+* DONE Emacs vs Neovim                                      :emacs:tecnology:
 CLOSED: [2024-08-13 Tue 05:06]
 :PROPERTIES:
 :EXPORT_FILE_NAME: emacs-vs-nvim
@@ -552,7 +552,7 @@ CLOSED: [2024-08-13 Tue 05:06]
 Since I already use Emacs for my blog with Hugo, I find it more productive to keep using it for writing and content management while possibly using Neovim for coding tasks if you prefer its efficiency and speed.
 
 
-* DONE How I made my blog with emacs and hugo :emacs:blog:tecnology:personal:
+* DONE How I made my blog with emacs and hugo      :emacs:tecnology:personal:
 CLOSED: [2024-08-14 Wed 20:41]
 :PROPERTIES:
 :EXPORT_FILE_NAME: my-blog-in-emacs
@@ -638,7 +638,7 @@ And that's it, you can search more options for manage the front matter in hugo i
 Thanks for reading.
 
 
-* DONE Install Telega in NixOS - Emacs.          :emacs:post:linux:tecnology:
+* DONE Install Telega in NixOS - Emacs.               :emacs:linux:tecnology:
 CLOSED: [2024-08-21 Wed 13:33]
 :PROPERTIES:
 :EXPORT_FILE_NAME: install-telega-nixos
