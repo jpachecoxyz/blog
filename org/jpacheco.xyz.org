@@ -6,6 +6,7 @@
 #+hugo_custom_front_matter: toc true
 #+hugo_auto_set_lastmod: nil
 #+date: 2024-07-04
+#+tags: emacs(e) blog(b) post(p) project(P) linux(l) tecnology(t) wayland(w) script(s) work(w) personal(r)
 #+seq_todo: TODO(t) WAIT(w@/!) | DONE(d!)
 
 
@@ -46,7 +47,7 @@ See my whole information [[file:/documents/cv.pdf][here]].
 - [[https://github.com/engjpacheco/pymetrics][pymetrics, a python gui app to manage maintenance logs.]]
   
 
-* DONE Screen Record                          :shell:script:hyprland:wayland:
+* DONE Screen Record                                      :post:linux:script:
 CLOSED: [2024-03-15 Fri 04:14]
 :PROPERTIES:
 :EXPORT_FILE_NAME: screen-record
@@ -58,7 +59,7 @@ This script record the screen with the =wf-recorder= tool, it can be the hole sc
 The script is going to store the video in =/tmp/screencast.mp4=, this script only store one video, personally I think that have more than one record is a mess, more if you only wants to share a quick screencast to /telegram, irc, cinny/ or even to share it through =0x0.st=.
 
 ** Description and main variables:
-#+begin_src shell
+#+begin_src bash
 # Created By: Javier Pacheco - javier@jpacheco.xyz
 # Created On: 29/03/24
 # Project: Screen recorder in wayland
@@ -73,7 +74,7 @@ Those functions have enable the sound recording, so if you have some music, vide
 *** screencast:
 This option is going to record a specific area of the screen.
 This area is going to be specified by =slurp=.
-#+begin_src shell
+#+begin_src bash
 screencast() {
    wf-recorder --audio=$SOUND_CARD -f /tmp/screencast.mp4
 }
@@ -82,17 +83,17 @@ screencast() {
 *** area:
 This option is going to record a specific area of the screen.
 This area is going to be specified by =slurp=.
-#+begin_src shell
+#+begin_src bash
 area() {
    wf-recorder --audio=$SOUND_CARD -g "$(slurp)" -f /tmp/screencast.mp4
 }
 #+end_src
 
-** Useful functions:
+** Main functions:
 These functions are tools that ensures this script works correctly. For example if all ready have a existing file recorded, it will removed to record a new one, because this script only will create one video always, and also have a function to kill the process when it finished. 
 
 *** check internet connection:
-#+begin_src shell
+#+begin_src bash
 check_connection() {
     ping -c 1 google.com 1> /dev/null 2>&1
 }
@@ -100,7 +101,7 @@ check_connection() {
 
 *** share:
 This option is going to upload the video to =0x0.st= and copy the url to the clipboard using =wc-copy=.
-#+begin_src shell
+#+begin_src bash
 share() {
    notify-send "uploading.." "video is upoading to 0x0.st"
    curl -F "file=@/tmp/screencast.mp4" https://0x0.st | wl-copy && notify-send "Video stored in 0x0.st"
@@ -108,7 +109,7 @@ share() {
 #+end_src
 
 *** Kill existing process:
-#+begin_src shell
+#+begin_src bash
 kill_proc(){
     pkill --signal SIGINT wf-recorder
     if [ $? -eq 0 ];
@@ -121,7 +122,7 @@ kill_proc(){
 #+end_src
 
 *** Remove existing video:
-#+begin_src shell
+#+begin_src bash
 remove_vid() {
     [ -f /tmp/screencast.mp4 ] && rm /tmp/screencast.mp4
 }
@@ -129,7 +130,67 @@ remove_vid() {
 
 ** Sequence:
 This is were the scripts actually starts, first of all look if the script is already running, if not then ask for a recording option: 
-#+begin_src shell
+#+begin_src bash
+kill_proc
+
+OPT=$(printf "screencast\narea\nshare\nquit" | fuzzel --dmenu -p 'Select an option: ' )
+case $OPT in
+    'screencast')
+        sleep 1
+        remove_vid
+        sleep 1
+        screencast;;
+    'area')
+        sleep 1
+        remove_vid
+        sleep 1
+        area;;
+    'share') 
+        check_connection && share || notify-send "Error" "check your internet connection" ;;
+    *|quit) exit 0;;
+esac
+#+end_src
+
+** The whole code.
+#+begin_src bash
+# Created By: Javier Pacheco - javier@jpacheco.xyz
+# Created On: 29/03/24
+# Project: Screen recorder in wayland
+# Dependencies: wf-recorder wl-copy and a launcher like dmenu, fuzzel, etc.
+
+SOUND_CARD=$(pactl list sources | awk '/Name/ && /.monitor/ {print $2}')
+
+screencast() {
+   wf-recorder --audio=$SOUND_CARD -f /tmp/screencast.mp4
+}
+
+area() {
+   wf-recorder --audio=$SOUND_CARD -g "$(slurp)" -f /tmp/screencast.mp4
+}
+
+check_connection() {
+    ping -c 1 google.com 1> /dev/null 2>&1
+}
+
+share() {
+   notify-send "uploading.." "video is upoading to 0x0.st"
+   curl -F "file=@/tmp/screencast.mp4" https://0x0.st | wl-copy && notify-send "Video stored in 0x0.st"
+}
+
+kill_proc(){
+    pkill --signal SIGINT wf-recorder
+    if [ $? -eq 0 ];
+    then
+        notify-send "Video stored" "Video was stored in /tmp/screencast.mp4"
+        pkill --signal SIGINT wf-recorder
+        exit 0
+    fi
+}
+
+remove_vid() {
+    [ -f /tmp/screencast.mp4 ] && rm /tmp/screencast.mp4
+}
+
 kill_proc
 
 OPT=$(printf "screencast\narea\nshare\nquit" | fuzzel --dmenu -p 'Select an option: ' )
@@ -151,7 +212,7 @@ esac
 #+end_src
 
 
-* DONE Efetch.el                                                :emacs:fetch:
+* DONE Efetch.el                                          :emacs:post:script:
 CLOSED: [2024-01-13 Sat 04:11]
 :PROPERTIES:
 :EXPORT_FILE_NAME: efetch
@@ -210,7 +271,7 @@ The project is open to changes, improvements, and collaborations.
 Enhance your Emacs experience with =efetch.el=! Stay informed about your environment effortlessly. Download and integrate it into your Emacs setup today.
 
 
-* DONE Void linux bootstrap.                           :void:installer:linux:
+* DONE Void linux bootstrap.                 :project:linux:tecnology:script:
 :PROPERTIES:
 :EXPORT_FILE_NAME: voidstrap
 :EXPORT_DESCRIPTION: A void linux semi-automated installer.
@@ -313,7 +374,7 @@ sh custom.sh -b dev # especify the name of a custom branch in case of needed.
   
 
 
-* DONE Shell-utils                                      :shell:linux:scripts:
+* DONE Shell-utils                                     :project:linux:script:
 :PROPERTIES:
 :EXPORT_FILE_NAME: shell-utils.org
 :EXPORT_DESCRIPTION: A github repo that stores shell scripts utilities for x and wayland.
@@ -368,7 +429,7 @@ We welcome contributions! If you'd like to contribute, please follow these steps
 5. Submit a pull request to the main repository.
 
 ** Contact
-For questions or suggestions, please open an issue on GitHub or contact [[mailto:javier@jpacheco.xyz][Javier pacheco]].
+For questions or suggestions, please open an issue on GitHub or contact [[mailto:javier@jpacheco.xyz][Javier Pacheco]].
 
 
 * DONE Share Screen in Hyprland.                     :hyprland:linux:wayland:
@@ -409,7 +470,7 @@ That's it, that little command above solve my 1 day pain trying to share my scre
 Thanks for read me.
 
 
-* DONE Pymetrics                                         :python:maintenance:
+* DONE Pymetrics                            :project:linux:tecnology:wayland:
 CLOSED: [2024-08-11 Sun 03:00]
 :PROPERTIES:
 :EXPORT_FILE_NAME: pymetrics.md
@@ -460,7 +521,7 @@ This maintenance log app is a practical tool for any industrial maintenance team
 Feel free to explore the project and contribute to its development by visiting the [[https://github.com/jpachecoxyz/pymetrics][Pymetrics Repository]] on GitHub.
 
 
-* DONE Emacs vs Neovim                      :emacs:nvim:programming:writting:
+* DONE Emacs vs Neovim                   :emacs:blog:post:tecnology:personal:
 CLOSED: [2024-08-13 Tue 05:06]
 :PROPERTIES:
 :EXPORT_FILE_NAME: emacs-vs-nvim
@@ -491,7 +552,7 @@ CLOSED: [2024-08-13 Tue 05:06]
 Since I already use Emacs for my blog with Hugo, I find it more productive to keep using it for writing and content management while possibly using Neovim for coding tasks if you prefer its efficiency and speed.
 
 
-* DONE How I made my blog with emacs and hugo               :emacs:blog:hugo:
+* DONE How I made my blog with emacs and hugo :emacs:blog:tecnology:personal:
 CLOSED: [2024-08-14 Wed 20:41]
 :PROPERTIES:
 :EXPORT_FILE_NAME: my-blog-in-emacs
@@ -577,12 +638,16 @@ And that's it, you can search more options for manage the front matter in hugo i
 Thanks for reading.
 
 
-* TODO Install Telega in NixOS - Emacs.                         :emacs:nixos:
+* DONE Install Telega in NixOS - Emacs.          :emacs:post:linux:tecnology:
+CLOSED: [2024-08-21 Wed 13:33]
 :PROPERTIES:
 :EXPORT_FILE_NAME: install-telega-nixos
 :EXPORT_DESCRIPTION: How to install Telega server in NixOS.
 :DATE:     08-21-2024
 :EXPORT_HUGO_SECTION: posts
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-08-21 Wed 13:33]
 :END:
 
 What is telega?.

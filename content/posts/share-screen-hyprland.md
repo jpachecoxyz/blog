@@ -3,7 +3,6 @@ title = "Share Screen in Hyprland."
 author = ["Javier Pacheco"]
 description = "How to share screen in hyprland in apps like: telegram-desktop."
 date = 2024-08-11T02:52:00-05:00
-lastmod = 2024-08-21T05:32:45-05:00
 tags = ["hyprland", "linux", "wayland"]
 draft = false
 toc = true

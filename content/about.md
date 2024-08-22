@@ -3,7 +3,6 @@ title = "About me."
 author = ["Javier Pacheco"]
 description = "My personal information"
 date = 2024-01-05T18:00:00-06:00
-lastmod = 2024-08-21T05:32:45-05:00
 tags = ["about"]
 draft = false
 image = "images/thumbnails/jp.png"

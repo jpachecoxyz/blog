@@ -3,8 +3,7 @@ title = "Screen Record"
 author = ["Javier Pacheco"]
 description = "Script to record in hyprland"
 date = 2024-03-15T04:14:00-05:00
-lastmod = 2024-08-21T05:32:45-05:00
-tags = ["shell", "script", "hyprland", "wayland"]
+tags = ["post", "linux", "script"]
 draft = false
 toc = true
 +++
@@ -15,7 +14,7 @@ The script is going to store the video in `/tmp/screencast.mp4`, this script onl
 
 ## Description and main variables: {#description-and-main-variables}
 
-```shell
+```bash
 # Created By: Javier Pacheco - javier@jpacheco.xyz
 # Created On: 29/03/24
 # Project: Screen recorder in wayland
@@ -35,7 +34,7 @@ Those functions have enable the sound recording, so if you have some music, vide
 This option is going to record a specific area of the screen.
 This area is going to be specified by `slurp`.
 
-```shell
+```bash
 screencast() {
    wf-recorder --audio=$SOUND_CARD -f /tmp/screencast.mp4
 }
@@ -47,21 +46,21 @@ screencast() {
 This option is going to record a specific area of the screen.
 This area is going to be specified by `slurp`.
 
-```shell
+```bash
 area() {
    wf-recorder --audio=$SOUND_CARD -g "$(slurp)" -f /tmp/screencast.mp4
 }
 ```
 
 
-## Useful functions: {#useful-functions}
+## Main functions: {#main-functions}
 
 These functions are tools that ensures this script works correctly. For example if all ready have a existing file recorded, it will removed to record a new one, because this script only will create one video always, and also have a function to kill the process when it finished.
 
 
 ### check internet connection: {#check-internet-connection}
 
-```shell
+```bash
 check_connection() {
     ping -c 1 google.com 1> /dev/null 2>&1
 }
@@ -72,7 +71,7 @@ check_connection() {
 
 This option is going to upload the video to `0x0.st` and copy the url to the clipboard using `wc-copy`.
 
-```shell
+```bash
 share() {
    notify-send "uploading.." "video is upoading to 0x0.st"
    curl -F "file=@/tmp/screencast.mp4" https://0x0.st | wl-copy && notify-send "Video stored in 0x0.st"
@@ -82,7 +81,7 @@ share() {
 
 ### Kill existing process: {#kill-existing-process}
 
-```shell
+```bash
 kill_proc(){
     pkill --signal SIGINT wf-recorder
     if [ $? -eq 0 ];
@@ -97,7 +96,7 @@ kill_proc(){
 
 ### Remove existing video: {#remove-existing-video}
 
-```shell
+```bash
 remove_vid() {
     [ -f /tmp/screencast.mp4 ] && rm /tmp/screencast.mp4
 }
@@ -108,7 +107,69 @@ remove_vid() {
 
 This is were the scripts actually starts, first of all look if the script is already running, if not then ask for a recording option:
 
-```shell
+```bash
+kill_proc
+
+OPT=$(printf "screencast\narea\nshare\nquit" | fuzzel --dmenu -p 'Select an option: ' )
+case $OPT in
+    'screencast')
+        sleep 1
+        remove_vid
+        sleep 1
+        screencast;;
+    'area')
+        sleep 1
+        remove_vid
+        sleep 1
+        area;;
+    'share')
+        check_connection && share || notify-send "Error" "check your internet connection" ;;
+    *|quit) exit 0;;
+esac
+```
+
+
+## The whole code. {#the-whole-code-dot}
+
+```bash
+# Created By: Javier Pacheco - javier@jpacheco.xyz
+# Created On: 29/03/24
+# Project: Screen recorder in wayland
+# Dependencies: wf-recorder wl-copy and a launcher like dmenu, fuzzel, etc.
+
+SOUND_CARD=$(pactl list sources | awk '/Name/ && /.monitor/ {print $2}')
+
+screencast() {
+   wf-recorder --audio=$SOUND_CARD -f /tmp/screencast.mp4
+}
+
+area() {
+   wf-recorder --audio=$SOUND_CARD -g "$(slurp)" -f /tmp/screencast.mp4
+}
+
+check_connection() {
+    ping -c 1 google.com 1> /dev/null 2>&1
+}
+
+share() {
+   notify-send "uploading.." "video is upoading to 0x0.st"
+   curl -F "file=@/tmp/screencast.mp4" https://0x0.st | wl-copy && notify-send "Video stored in 0x0.st"
+}
+
+kill_proc(){
+    pkill --signal SIGINT wf-recorder
+    if [ $? -eq 0 ];
+    then
+        notify-send "Video stored" "Video was stored in /tmp/screencast.mp4"
+        pkill --signal SIGINT wf-recorder
+        exit 0
+    fi
+}
+
+remove_vid() {
+    [ -f /tmp/screencast.mp4 ] && rm /tmp/screencast.mp4
+}
+
 kill_proc
 
 OPT=$(printf "screencast\narea\nshare\nquit" | fuzzel --dmenu -p 'Select an option: ' )

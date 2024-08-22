@@ -3,8 +3,7 @@ title = "How I made my blog with emacs and hugo"
 author = ["Javier Pacheco"]
 description = "A overview of how I write and develop my web blog using emacs & hugo"
 date = 2024-08-14T20:41:00-05:00
-lastmod = 2024-08-21T05:32:46-05:00
-tags = ["emacs", "blog", "hugo"]
+tags = ["emacs", "blog", "tecnology", "personal"]
 draft = false
 toc = true
 +++

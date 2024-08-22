@@ -3,8 +3,7 @@ title = "Shell-utils"
 author = ["Javier Pacheco"]
 description = "A github repo that stores shell scripts utilities for x and wayland."
 date = 2024-07-04
-lastmod = 2024-08-21T05:32:45-05:00
-tags = ["shell", "linux", "scripts"]
+tags = ["project", "linux", "script"]
 draft = false
 toc = true
 +++
@@ -72,4 +71,4 @@ We welcome contributions! If you'd like to contribute, please follow these steps
 
 ## Contact {#contact}
 
-For questions or suggestions, please open an issue on GitHub or contact [Javier pacheco](mailto:javier@jpacheco.xyz).
+For questions or suggestions, please open an issue on GitHub or contact [Javier Pacheco](mailto:javier@jpacheco.xyz).

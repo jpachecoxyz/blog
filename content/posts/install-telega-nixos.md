@@ -2,10 +2,9 @@
 title = "Install Telega in NixOS - Emacs."
 author = ["Javier Pacheco"]
 description = "How to install Telega server in NixOS."
-date = 2024-07-04
-lastmod = 2024-08-21T05:32:46-05:00
-tags = ["emacs", "nixos"]
-draft = true
+date = 2024-08-21T13:33:00-05:00
+tags = ["emacs", "post", "linux", "tecnology"]
+draft = false
 toc = true
 +++
 
